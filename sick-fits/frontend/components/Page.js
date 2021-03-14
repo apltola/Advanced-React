@@ -11,16 +11,17 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    --red: #ff000;
+    --red: #ff0000;
     --black: #393939;
     --grey: #3a3a3a;
     --gray: var(--grey);
     --lightGrey: #e1e1e1;
-    --lightGray: var(----lightGrey);
+    --lightGray: var(--lightGrey);
     --offWhite: #ededed;
     --maxWidth: 1000px;
     --bs: 0 12px 24px 0 rgba(0,0,0,0.09);
     box-sizing: border-box;
+    font-size: 62.5%;
   }
 
   *,
@@ -35,6 +36,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     font-size: 1rem;
     line-height: 2;
+    font-size: 1.5rem;
   }
   button {
     cursor: pointer;

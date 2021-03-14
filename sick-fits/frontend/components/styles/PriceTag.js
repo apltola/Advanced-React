@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 const PriceTag = styled.span`
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  right: -3px;
   background: var(--red);
   transform: rotate(3deg);
   color: white;
@@ -8,10 +12,6 @@ const PriceTag = styled.span`
   padding: 5px;
   line-height: 1;
   font-size: 3rem;
-  display: inline-block;
-  position: absolute;
-  top: -3px;
-  right: -3px;
 `;
 
 export default PriceTag;

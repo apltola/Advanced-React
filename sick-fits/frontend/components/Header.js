@@ -8,7 +8,9 @@ const Logo = styled.h1`
   position: relative;
   z-index: 2;
   background-color: red;
-  transform: skew(-7deg);
+  transform: skew(-5deg);
+  // temporarily apply nowrap to logo
+  white-space: nowrap;
   a {
     color: white;
     text-decoration: none;
@@ -18,11 +20,13 @@ const Logo = styled.h1`
 `;
 
 const StyledHeader = styled.header`
+  border-top: 1px solid var(--lightGray);
+
   .bar {
     display: grid;
     grid-template-columns: auto 1fr;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     border-bottom: 10px solid var(--black, black);
   }
 
@@ -40,11 +44,11 @@ export default function Header() {
         <Logo>
           <Link href="/">Sick fits</Link>
         </Logo>
+        <Nav />
       </div>
       <div className="sub-bar">
         <p>Search</p>
       </div>
-      <Nav />
     </StyledHeader>
   );
 }
